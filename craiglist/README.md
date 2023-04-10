@@ -1,3 +1,9 @@
+This a craiglist website remake from designer @Yemi Oni on Behance.
+Built with react, gsap and sass. The mainstay of this project is to write code with higher order functions where necessary. Also, to solidify the mastery of conditional rendering on react once and for all.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

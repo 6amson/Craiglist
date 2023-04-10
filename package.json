@@ -1,8 +1,0 @@
-{
-  "name": "craiglist",
-  "version": "1.0.0",
-  "description": "a craiglist site remake",
-  "main": "index.js",
-  "author": "Bunmi",
-  "license": "MIT"
-}
