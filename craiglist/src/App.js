@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Landing from './pages/landing/Landing'
+import Landing from './pages/landing/Landing';
+import Explore from './pages/explore/Explore';
+import Product from './pages/product/Product';
 
 
 function App() {
@@ -8,6 +10,12 @@ function App() {
       <div className="App">
         <Routes>
           <Route exact path='/' element={< Landing/>}></Route>
+        </Routes>
+        <Routes>
+          <Route exact path='/' element={< Explore/>}></Route>
+        </Routes>
+        <Routes>
+          <Route exact path='/' element={< Product/>}></Route>
         </Routes>
      </div>
     </Router>
