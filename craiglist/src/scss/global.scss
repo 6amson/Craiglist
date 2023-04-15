@@ -1,0 +1,33 @@
+$mainFont: 'ClashDisplay-variable';
+$logoFont: 'ClashDisplay-Bold';
+$mainColor: #4f4fff;
+$secColor: #acadff;
+$spacing: 32px;
+$Mspacing: 16px;
+
+html{
+  font-family: $mainFont;
+}
+
+input{
+  font-size: 16px;
+  padding: 5px;
+  font-family: '$mainFont';
+  border-radius: 12px;
+  border: solid 0.1px white;
+  background-color: $mainColor;
+  width: 20rem;
+  top: 3px;
+  position: relative;
+  padding-left: 15px;
+  color: white;
+  outline: whitesmoke;
+}
+
+input::placeholder{
+  margin-left: 12px;
+  color: white;
+  font-weight: 200;
+  font-family: $mainFont;
+  font-size: 14px;
+}

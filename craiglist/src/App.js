@@ -12,10 +12,10 @@ function App() {
           <Route exact path='/' element={< Landing/>}></Route>
         </Routes>
         <Routes>
-          <Route exact path='/' element={< Explore/>}></Route>
+          <Route exact path='/explore' element={< Explore/>}></Route>
         </Routes>
         <Routes>
-          <Route exact path='/' element={< Product/>}></Route>
+          <Route exact path='/product' element={< Product/>}></Route>
         </Routes>
      </div>
     </Router>
