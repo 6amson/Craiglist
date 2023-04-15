@@ -5,7 +5,7 @@ import Header from '../../components/header/Header';
 import main1 from '../../assets/main1.jpg';
 import main2 from '../../assets/main2.jpg';
 import main3 from '../../assets/main3.jpg';
-import world from '../../assets/world.svg';
+import World from '../../assets/World'
 
 export default function Footer() {
     return (
@@ -58,6 +58,10 @@ export default function Footer() {
                     <div><img src={main1}/></div>
                     <div><img src={main2}/></div>
                     <div><img src={main3}/></div>
+                </div>
+
+                <div className='world'>
+                    <World fill="red" />
                 </div>
             </div>
         </div>

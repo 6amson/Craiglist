@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created for MapSVG plugin: http://mapsvg.com -->
-<svg
-   xmlns:mapsvg="http://mapsvg.com"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   mapsvg:geoViewBox="-169.110266 83.600842 190.486279 -58.508473"
+import * as React from "react";
+
+export default function World (){
+   return(
+   <svg
+   fill= "blue"
+   fillOpacity={0.05}
    width="1009.6727"
    height="665.96301">
  
@@ -1035,3 +1033,7 @@
      title="Zimbabwe"
      id="ZW" />
 </svg>
+
+    
+)
+}
