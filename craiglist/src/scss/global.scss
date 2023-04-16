@@ -7,6 +7,10 @@ $Mspacing: 16px;
 
 html{
   font-family: $mainFont;
+  width: 100vw;
+  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 input{

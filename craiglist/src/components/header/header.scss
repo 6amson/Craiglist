@@ -7,6 +7,7 @@
 .header_container{
     
     height: inherit;
+    width: 100vw;
 
     header{
         display: flex;
@@ -30,10 +31,11 @@
                     position: absolute;
                     color: white;
                     font-weight: 100;
-                    transform: scale(0.6);
-                    right: 0.5rem;
-                    top: 4px;
+                    right: 0.4rem;
+                    top: 5px;
                     width: fit-content;
+                    cursor: pointer;
+                    transform: scale(0.7);
                 }
             }
             
@@ -85,7 +87,7 @@ h1{
            position: absolute;
             left: -9.5rem;
             top: 0.25rem;
-            transform: scale(0.6);
+            transform: scale(0.7);
         }
     }
 
