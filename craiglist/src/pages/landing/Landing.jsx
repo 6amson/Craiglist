@@ -14,7 +14,7 @@ export default function Footer() {
             <div className='heropage'>
                 <div className='heropage_Left'>
                     <div className='firstDiv'>
-                        <p>Craiglist, the perfect <span>user-centric </span>platfrom</p>
+                        <p>Craiglist, the perfect <span>user-centric </span>platfrom.</p>
                     </div>
 
                     <div className='secondDiv'>
@@ -60,6 +60,44 @@ export default function Footer() {
 
                 <div className='world'>
                     <World fill="red" />
+                </div>
+            </div>
+
+            <div className='explore_Div'>
+                <div className='explore_Div1'>
+                    <span class="material-symbols-outlined">
+                        auto_awesome
+                    </span>
+                    <p>Explore our offerings</p>
+                    <p>
+                        Welcome to the explore page where you can see
+                        all our offerings in different sections ranging from
+                        house sales, gigs, latest jobs, forums, and much more.
+                    </p>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Jobs</li>
+                        <li>Houses</li>
+                        <li>Services</li>
+                        <li>For sale</li>
+                        <li>Community</li>
+                        <li>Forum</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Jobs posted within the last 24hrs</p>
+                    <input
+                        type='text'
+                        id="Secsearch"
+                        name="search"
+                        placeholder='Search for jobs...'
+                    />
+                    <span class="material-symbols-outlined eclens">
+                        search
+                    </span>
                 </div>
             </div>
         </div>

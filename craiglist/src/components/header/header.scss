@@ -4,6 +4,7 @@
 
 
 
+
 .header_container{
     
     height: inherit;
@@ -67,6 +68,16 @@
             }
         }
     }
+}
+
+#search{
+    border: solid 0.1px white;
+    color: white;
+}
+
+#search::placeholder{
+    
+  color: white;
 }
 
 h1{
@@ -135,6 +146,9 @@ h1{
         }
     }
 }
+
+
+
 
 
 
