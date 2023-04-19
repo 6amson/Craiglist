@@ -9,6 +9,7 @@ export default function Header() {
 
     const isMediumScreen = useMediaQuery({ query: '(max-width: 965px)' });
     const isSmallScreen = useMediaQuery({ query: '(max-width: 700px)' });
+
     const [menuOpen, setMenuOpen] = useState('');
 
     return (
@@ -105,37 +106,6 @@ export default function Header() {
                     </header>
                 )
             }
-
-            {/* <div className='logoFont'>
-                <h1>Craiglist</h1>
-            </div>
-
-            <div className='textDiv'>
-                <div>
-                    <input
-                        type='text'
-                        id="search"
-                        name="search"
-                        placeholder='Search craiglist...'
-                    />
-                    <span class="material-symbols-outlined lens">
-                        search
-                    </span>
-                </div>
-                <div>
-                    <ul>
-                        <li>Get app</li>
-                        <li>Posting</li>
-                        <li>My account</li>
-                        <li>English <span class="material-symbols-outlined">
-                            keyboard_arrow_down
-                        </span></li>
-                    </ul>
-                </div>
-                <div>
-                    <img alt='spain flag' className='flag' src={flag} />
-                </div>
-            </div> */}
         </div>
     )
 }

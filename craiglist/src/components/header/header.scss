@@ -33,10 +33,10 @@
                     color: white;
                     font-weight: 100;
                     right: 0.4rem;
-                    top: 5px;
+                    top: 6px;
                     width: fit-content;
                     cursor: pointer;
-                    transform: scale(0.7);
+                    transform: scale(0.8);
                 }
             }
             
@@ -98,7 +98,7 @@ h1{
            position: absolute;
             left: -9.5rem;
             top: 0.25rem;
-            transform: scale(0.7);
+            transform: scale(0.8);
         }
     }
 
@@ -133,6 +133,8 @@ h1{
 .lens, .search, .menu, .close, .down{
     color: whitesmoke;
 }
+
+
 
 
 .textSmallDiv{
