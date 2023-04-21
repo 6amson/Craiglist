@@ -141,7 +141,7 @@
     border-radius: 5rem;
     top: 13rem;
     position: relative;
-    left: 10rem;
+    left: 12rem;
 }
 
 .mainPhoto2{
@@ -212,7 +212,7 @@
     }
 
     p:nth-child(3){
-        font-size: 20px;
+        font-size: 18px;
         color: grey;
         width: 40%;
     }
@@ -295,7 +295,7 @@
 }
 
 
-.exploreTemplateContainer{
+.exploreTemplateContainer, .exploreTemplateContainer3{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-row-gap: 30px;
@@ -303,7 +303,11 @@
     margin-bottom: 128px;
 }
 
-.exploreTem{
+.exploreTemplateContainer2{
+    margin-bottom: 32px;
+}
+
+.exploreTem, .display3{
     cursor: pointer;
     border: solid 2px rgb(217, 225, 235);
     border-radius: 3px;
@@ -412,6 +416,200 @@
     top: -3px;
 }
 
+.forumDiv{
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+    
+    
+
+    img{
+        position: relative;
+        width: 60%;
+        height: 60%;
+        left: 20%;
+        top: 10%;
+        margin-bottom: 0;
+    }
+
+    p{
+        text-align: center;
+        font-size: 1.5rem;
+        color: grey;
+    }
+}
+
+.comm{
+    height: 38%;
+    width: 38%;
+}
+
+.explore_Div5{
+    color: grey;
+    margin-bottom: 64px;
+}
+
+.explore_Div6Div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $mainColor;
+        margin-bottom: 128px;
+        cursor: pointer;
+        span{
+            position: relative;
+            top: 8px;
+        }
+    
+}
+
+.fifthDiv{
+    margin: 0 64px;
+
+    div:nth-child(2){
+        h2{
+            margin-bottom: $Mspacing;
+        }
+
+       P:nth-child(2){
+        font-size: 18px;
+        color: grey;
+        width: 40%;
+        margin-bottom: 64px;
+       }
+    }
+}
+
+.sentiment{
+    border: solid 0.1px $secColor;
+    background-color: $secColor;
+    padding: 0.6rem;
+    border-radius: 50%;
+    color: white;
+    margin-bottom: $spacing;
+}
+
+.exploreTemplateContainer3{
+
+    .display3_first{
+        padding: 8px;
+    }
+
+    .display3_firsta{
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        
+    }
+
+    .display3_firstaa{
+
+
+        div:nth-child(1){
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: rgb(29, 29, 29);
+        }
+       
+
+        div:nth-child(2){
+            display: flex;
+            margin-top: 8px;
+            color: grey;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+    }
+
+    .display3_firsta_img{
+        margin-right: $Mspacing;
+        width: 55px;
+        height: 55px;
+        border: solid 1px transparent;
+        border-radius: 50%;
+    }
+
+}
+
+
+.display3_firstb{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: $Mspacing;
+}
+
+.display3_firstc{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .display3_firstcPara{
+        font-size: 10px;
+        color: $mainColor;
+        position: relative;
+        left: 2.5rem;
+       
+    }
+
+    .testimonial{
+        margin-right: $Mspacing;
+        width: 30px;
+        height: 30px;
+        border: solid 1px transparent;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    div:nth-child(2){
+        display: flex;
+        position: relative;
+    }
+    .testimonial2{
+        left: 1.5rem;
+    }
+
+    .testimonial1{
+        left: 3rem;
+    }
+
+}
+
+.exploreTemplateContainer3{
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.sixthDiv{
+    position: relative;
+    margin: 0 64px;
+    background-color: $mainColor;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.midSec{
+    background: url('../../assets/midSection.png');
+    width: 10rem;
+    height: 10rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid 1px transparent;
+    border-radius: 10px 10px 0 0;
+    margin: 32px 64px 0 32px;
+    min-width: 350px;
+    height: 350px;
+}
+
+
+.circle{
+    position: absolute;
+}
+
+
+
+
+
 
 
 
@@ -450,6 +648,21 @@
         }
     }
 
+    .fifthDiv{
+        margin: 0 64px;
+    
+        div:nth-child(2){
+    
+            h2{
+                font-size: 20px;
+            }
+           P:nth-child(2){
+            width: 100%;
+            font-size: 16px;
+           }
+        }
+    }
+
     .heropage_Left{
         width: 100%;
     }
@@ -479,6 +692,11 @@
 .world{
     transform: scale(0.3);
 }
+
+.fifthDiv{
+    margin: 0 32px;
+}
+
 }
 
 @media (max-width: 510px){
