@@ -583,7 +583,7 @@
     position: relative;
     margin: 0 64px;
     background-color: $mainColor;
-    overflow-y: hidden;
+    overflow: hidden;
     display: flex;
     justify-content: space-around;
     margin-bottom: 64px;
@@ -617,6 +617,7 @@
     margin-top: 64px;
 
     .sixthDiv1ba{
+        cursor: pointer;
         border-radius: 5px;
         border: solid 1px transparent;
         background-color: white;
@@ -650,6 +651,7 @@
     }
 
     .sixthDiv1bb{
+        cursor: pointer;
         border-radius: 5px;
         border: solid 1px transparent;
         background-color: white;
