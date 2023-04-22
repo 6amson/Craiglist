@@ -8,6 +8,8 @@ import engineer from '../../assets/logo/engineer.svg';
 import sell from '../../assets/logo/sale.svg';
 import forum from '../../assets/logo/forum.svg';
 import comm from '../../assets/logo/community.svg';
+import google from '../../assets/logo/Google_Play-Icon-Logo.wine.svg';
+import apple from '../../assets/logo/Apple_Store-Logo.wine.svg';
 
 
 
@@ -271,7 +273,7 @@ export default function Footer() {
                         {
                             <div className='forumDiv'>
                                 <p>Join the our community.</p>
-                                <img  alt='community' src={comm} />
+                                <img alt='community' src={comm} />
                             </div>
                         }
                     </div>
@@ -673,16 +675,16 @@ export default function Footer() {
                     </div>
 
                     <div className='sixthDiv1b'>
-                        <div>
-                            <img />
+                        <div className='sixthDiv1ba'>
+                            <div className='sixthDiv1baPhoto'><img src={google} /></div>
                             <div>
                                 <p>Get it on</p>
                                 <p>Google play</p>
                             </div>
                         </div>
 
-                        <div>
-                            <img />
+                        <div className='sixthDiv1bb'>
+                            <img src={apple} className='sixthDiv1bbPhoto'/>
                             <div>
                                 <p>Download on</p>
                                 <p>App store</p>
@@ -691,8 +693,10 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className='midSec'></div>
-                
+                <div className='midSec'>
+                    <p>Craiglist</p>
+                </div>
+
                 <div className='circle circle1'></div>
                 <div className='circle circle2'></div>
                 <div className='circle circle3'></div>
