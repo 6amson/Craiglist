@@ -768,6 +768,7 @@
     width: 60%;
     justify-self: center;
     margin-bottom: $Mspacing;
+    z-index: 10;
 }
 
 .seventhDiv2{
@@ -776,6 +777,7 @@
     width: 60%;
     justify-self: center;
     margin-bottom: 64px;
+    z-index: 10;
 }
 
 
@@ -1015,6 +1017,20 @@
     
 }
 
+.seventhDiv1{
+    font-size: 48px;
+    width: 80%;
+}
+
+.seventhDiv2{
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.seventhDiv3{
+    z-index: 10;
+}
+
 }
 
 @media (max-width: 522px){
@@ -1057,6 +1073,44 @@
             margin-top: 50px;
         }
        
+    }
+
+    .seventhDiv1{
+        font-size: 48px;
+        width: 100%;
+    }
+    
+    .seventhDiv2{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .view1, .view2{
+        width: 40px;
+        height: 40px;
+    }
+
+    .view3, .view4{
+        width: 60px;
+        height: 60px;
+    }
+
+    .view1{
+        left: 1rem;
+    }
+
+    .view2{
+        right: 2rem;
+    }
+
+    .view3{
+        left: 1rem;
+        top: 8rem;
+    }
+
+    .view4{
+        left: 15rem;
+        top: 8rem;
     }
 
 }
