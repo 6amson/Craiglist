@@ -589,14 +589,13 @@
     overflow: hidden;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 64px;
+    margin-bottom: 128px;
 }
 
 .sixthDiv1{
     margin: 6rem 0 10px 2rem;
     height: 80%;
     color: white;
-    
     position: relative;
 }
 
@@ -606,7 +605,7 @@
    
     
     h2{
-        font-size: 64px;
+        font-size: 54px;
         width: 100%;
         max-width: 100%;
         min-width: 400px;
@@ -750,6 +749,89 @@
 .circle4{
     top: 10rem;
     right: -3.5rem;
+}
+
+
+.seventhDiv{
+    position: relative;
+    margin: 0 64px;
+    text-align: center;
+    margin-bottom: 128px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.seventhDiv1{
+    font-size: 54px;
+    font-weight: 500;
+    width: 60%;
+    justify-self: center;
+    margin-bottom: $Mspacing;
+}
+
+.seventhDiv2{
+    font-size: 1.5rem;
+    color: grey;
+    width: 60%;
+    justify-self: center;
+    margin-bottom: 64px;
+}
+
+
+.seventhDiv3{
+    justify-self: center;
+
+}
+
+
+.view{
+    position: absolute;
+    border-radius: 50%;
+}
+
+.view1, .view2{
+    width: 70px;
+    height: 70px;
+}
+
+.view3, .view4{
+    width: 100px;
+    height: 100px;
+}
+
+.view1{
+    background: url('../../assets/photo3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 2rem;
+    left: 7rem;
+}
+
+.view2{
+    background: url('../../assets/view1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 9rem;
+    top: 3rem;
+}
+
+.view3{
+    background: url('../../assets/photo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    right: 5rem;
+    top: 13rem;
+}
+
+.view4{
+    background: url('../../assets/main3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    top: 13rem;
+    left: 3rem;
 }
 
 

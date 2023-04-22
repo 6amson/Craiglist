@@ -684,7 +684,7 @@ export default function Footer() {
                         </div>
 
                         <div className='sixthDiv1bb'>
-                            <img src={apple} className='sixthDiv1bbPhoto'/>
+                            <img src={apple} className='sixthDiv1bbPhoto' />
                             <div>
                                 <p>Download on</p>
                                 <p>App store</p>
@@ -701,6 +701,35 @@ export default function Footer() {
                 <div className='circle circle2'></div>
                 <div className='circle circle3'></div>
                 <div className='circle circle4'></div>
+            </div>
+
+            <div className='seventhDiv'>
+                <div className='seventhDiv1'>
+                    <p>Start your journey with craiglist</p>
+                </div>
+
+                <div className='seventhDiv2'>
+                    <span>
+                        We leave you with a smile everytime you visit our platfrom.
+                        Be part of the craiglist family. We are alwsys at your service.
+                    </span>
+                </div>
+
+                <div className='thirdDiv seventhDiv3'>
+                    <div>
+                        <p>Create posting</p>
+                        <span class="material-symbols-outlined">
+                            north_east
+                        </span>
+                    </div>
+                    <div><p>Register</p></div>
+                </div>
+
+                <div className='view view1'></div>
+                <div className='view view2'></div>
+                <div className='view view3'></div>
+                <div className='view view4'></div>
+
             </div>
         </div>
     )
