@@ -45,6 +45,8 @@ p:first-child{
 
 .footerDicSec2{
     margin-top: 16px;
+    display: flex;
+    margin-bottom: 16px;
 }
 
 
@@ -55,6 +57,13 @@ p:first-child{
 
 }
 
+.footerDicSec1bc{
+     display: flex;
+
+     div:first-child{
+        margin-right: $Mspacing;
+     }
+}
 
 .footerDicSec1ba, .footerDicSec1bb{
     cursor: pointer;
@@ -101,20 +110,26 @@ p:first-child{
 /********************MEDIA QUERIES************************************/
 
 @media (max-width: 856px){
+    .footerDicSec2{
+        width: 130%;
+    }
+    
     .footerDicSec1ba, .footerDicSec1bb{
-        z-index: 10;
+        
         border-radius: 5px;
         margin-right: $spacing;
         padding: 5px 15px 5px 15px ;
-        
-        img:first-child{
-            width: 1.5rem;
-            height: 1.5rem;
-            position: relative;
-            left: -8px;
-            margin-top: 4px;
+
+        .sixthDiv1baPhoto{
+            img:first-child{
+                width: 1.5rem;
+                height: 1.5rem;
+                position: relative;
+                left: -8px;
+                margin-top: 4px;
+            }
         }
-    
+        
         div:nth-child(2){
             p:first-child{  
                 font-size: 0.7rem;
@@ -123,7 +138,7 @@ p:first-child{
     
             p:nth-child(2){
                 font-size: 1rem;
-                color: black;
+                color: rgb(0, 0, 0);
                 font-weight: 500;
             }
         }

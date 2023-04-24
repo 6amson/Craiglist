@@ -44,10 +44,10 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div  className='footerDivSec'>
+                <div className='footerDivSec'>
                     <p>Craiglist app</p>
                     <div className='footerDivSec1'>
-                        <div className='sixthDiv1b footerDicSec2'>
+                        <div className='footerDicSec2'>
                             <div className='footerDicSec1ba'>
                                 <div className='sixthDiv1baPhoto'><img src={google} /></div>
                                 <div>
@@ -65,9 +65,16 @@ export default function Footer() {
                             </div>
                         </div>
 
+                        <div className='footerDicSec1bc'>
+                            <div>
+                                All rights reserved
+                            </div>
+                            <div>
+                            &copy; craiglist 2023
+                            </div>
+                        </div>
+
                         <div>
-                            <span>All rights reserved</span>
-                            <span>&#169; 2022 Craiglist</span>
                         </div>
                     </div>
                 </div>
