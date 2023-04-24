@@ -10,12 +10,13 @@ import forum from '../../assets/logo/forum.svg';
 import comm from '../../assets/logo/community.svg';
 import google from '../../assets/logo/Google_Play-Icon-Logo.wine.svg';
 import apple from '../../assets/logo/Apple_Store-Logo.wine.svg';
+import Footer from '../../components/footer/Footer';
 
 
 
 
 
-export default function Footer() {
+export default function Landing() {
     const isSmallerScreen = useMediaQuery({ query: '(max-width: 500px)' });
     // const [selectedOption, setSelectedOption] = useState('');
     const [liElement, setLiElement] = useState('jobs');
@@ -730,6 +731,10 @@ export default function Footer() {
                 <div className='view view3'></div>
                 <div className='view view4'></div>
 
+            </div>
+
+            <div>
+                <Footer/>
             </div>
         </div>
     )

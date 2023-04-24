@@ -646,7 +646,7 @@
 
             p:nth-child(2){
                 font-size: 1.1rem;
-                color: black;
+                color: rgb(0, 0, 0);
                 font-weight: 500;
             }
         }
@@ -835,6 +835,10 @@
     top: 13rem;
     left: 3rem;
 }
+
+
+
+
 
 
 
@@ -1048,12 +1052,6 @@
 
     #Secsearch::placeholder{
         font-size: 0.8rem;
-    }
-
-    .sixthDiv1a{
-        h2{
-           
-        }
     }
 
     .sixthDiv{

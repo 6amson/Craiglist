@@ -1,0 +1,135 @@
+@import "../../scss/variables.scss";
+@import "../../scss/global.scss";
+
+
+footer{
+    background-color: #fafafa;
+}
+
+.footerDiv{
+    margin: 0 64px;
+}
+
+.footerDivUl{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+
+    ul{
+       
+        margin-top: 32px;
+        list-style-type: none;
+
+        li:first-child{
+            font-weight: 500;
+            margin-bottom: $Mspacing;
+        }
+
+        li{
+            margin-bottom: 8px;
+        }
+
+        
+    }
+}
+
+.footerDivSec{
+margin-top: 32px;
+margin-bottom: 16px;
+
+p:first-child{
+    font-weight: 500;
+}
+
+}
+
+.footerDicSec2{
+    margin-top: 16px;
+}
+
+
+.footerDivSec1{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+
+.footerDicSec1ba, .footerDicSec1bb{
+    cursor: pointer;
+    border: solid 1px black;
+        border-radius: 5px;
+        border-top: 2px black solid;
+        border-right: 1.5px solid black;
+        background-color: white;
+        display: flex;
+        margin-right: $spacing;
+        position: relative;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+
+        img:first-child{
+           width: 2rem;
+           height: 2rem;
+           position: relative;
+           left: -8px;
+           margin-top: 4px;
+        }
+
+        div:nth-child(2){
+            p:first-child{  
+                font-size: 0.8rem;
+                color: grey;
+            }
+
+            p:nth-child(2){
+                font-size: 1.1rem;
+                color: rgb(0, 0, 0);
+                font-weight: 500;
+            }
+        }
+   
+}
+
+
+
+
+
+
+/********************MEDIA QUERIES************************************/
+
+@media (max-width: 856px){
+    .footerDicSec1ba, .footerDicSec1bb{
+        z-index: 10;
+        border-radius: 5px;
+        margin-right: $spacing;
+        padding: 5px 15px 5px 15px ;
+        
+        img:first-child{
+            width: 1.5rem;
+            height: 1.5rem;
+            position: relative;
+            left: -8px;
+            margin-top: 4px;
+        }
+    
+        div:nth-child(2){
+            p:first-child{  
+                font-size: 0.7rem;
+                color: grey;
+            }
+    
+            p:nth-child(2){
+                font-size: 1rem;
+                color: black;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .footerDivSec1{
+        display: block;
+    }
+}
