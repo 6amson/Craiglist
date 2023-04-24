@@ -9,6 +9,9 @@
     height: 60px;
 }
 
+.container{
+    overflow-x: hidden;
+}
 .heropage{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
