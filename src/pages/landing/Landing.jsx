@@ -11,6 +11,9 @@ import comm from '../../assets/logo/community.svg';
 import google from '../../assets/logo/Google_Play-Icon-Logo.wine.svg';
 import apple from '../../assets/logo/Apple_Store-Logo.wine.svg';
 import Footer from '../../components/footer/Footer';
+import gsap from 'gsap';
+import SplitType from 'split-type';
+
 
 
 
@@ -22,6 +25,10 @@ export default function Landing() {
     const [liElement, setLiElement] = useState('jobs');
     const [showMore, setShowMore] = useState(false);
 
+
+
+
+
     let display;
     let display2;
     let display3;
@@ -29,6 +36,7 @@ export default function Landing() {
     const li_jobs = useRef(null);
     const ulRef = useRef(null);
     const available = useRef(null);
+
 
 
     const toggleShowMore = () => {
@@ -46,10 +54,31 @@ export default function Landing() {
     };
 
     useEffect(() => {
-        if (li_jobs.current || available.current) {
+        const tl = gsap.timeline({ defaults: { duration: 1 } });
 
+        const mySplitText1 = new SplitType(".firstDivPara");
+
+        if (li_jobs.current || available.current) {
             li_jobs.current.classList.add('highlight');
         }
+
+        tl.to(".header", { duration: 1, backgroundColor: "#4f4fff", scale: 1, opacity: 1, })
+            .to(".char", {
+                y: 0,
+                stagger: 0.05,
+                // delay: 0.2,
+                duration: .1,
+            })
+            .to(".secondDiv", {
+                y: 100,
+                opacity: 1,
+            })
+            .to(".thirdDiv", {
+                y: -50,
+                opacity: 1,
+                color: 'red'
+            })
+
     }, [])
 
 
@@ -521,7 +550,7 @@ export default function Landing() {
             <div className='heropage'>
                 <div className='heropage_Left'>
                     <div className='firstDiv'>
-                        <p>Craiglist, the perfect <span>user-centric </span>platfrom.</p>
+                        <p className='firstDivPara'>Craiglist, the perfect <span>user-centric </span>platfrom.</p>
                     </div>
 
                     <div className='secondDiv'>
@@ -734,7 +763,7 @@ export default function Landing() {
             </div>
 
             <div>
-                <Footer/>
+                <Footer />
             </div>
         </div>
     )

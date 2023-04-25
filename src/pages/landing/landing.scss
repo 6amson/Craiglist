@@ -5,8 +5,10 @@
 
 
 .header{
-    background-color: $mainColor;
+    background-color: transparent;
     height: 60px;
+    transform: scale(0.7);
+    opacity: 0;
 }
 
 .container{
@@ -25,6 +27,15 @@
     position: relative;
 }
 
+.firstDivPara{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.char{
+    transform: translateY(200px);
+    transition: transform .5s;
+}
+
 .firstDiv{
     width: 95%;
     font-size: 64px;
@@ -39,15 +50,21 @@
 }
 
 .secondDiv{
+    position: relative;
     width: 80%;
     font-size: 20px;
     color: grey;
+    bottom: 100px;
+    opacity: 0;
     margin-bottom: $spacing;
 }
 
 .thirdDiv{
     display: flex;
     margin-bottom: $Mspacing;
+    top: 50px;
+    position: relative;
+    opacity: 0;
     div{
         display: flex;
         padding: 8px;
@@ -873,7 +890,7 @@
     .sixthDiv1b{
         margin-bottom: $Mspacing;
 
-        div:nth-child(2){
+        div:nth-child(2)    {
             
         }
     }
