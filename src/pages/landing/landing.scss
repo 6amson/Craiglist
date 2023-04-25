@@ -159,19 +159,21 @@
     background: url('../../assets/main1.jpg');
     background-position-x: 50%;
     border-radius: 5rem;
-    top: 13rem;
+    top: 23rem;
     position: relative;
     left: 12rem;
+    opacity: 0;
 }
 
 .mainPhoto2{
     width: 11rem;
     background: url('../../assets/main2.jpg');
-    background-position-x: 65%;
+    background-position-x: 58%;
     position: absolute;
-    top: 0rem;
+    top: -5rem;
     right: 0;
     border-radius: 5.5rem;
+    opacity: 0;
 }
 
 .mainPhoto1, .mainPhoto2{
@@ -195,6 +197,7 @@
     position: absolute;
     right: 30px;
     top: 31rem;
+    opacity: 0;
 }
 
 .world{
@@ -226,6 +229,7 @@
 
 .explore_Div1{
     margin-bottom: 128px;
+    position: relative;
     h2{
         font-weight: 700;
         margin-bottom: $Mspacing;
@@ -236,6 +240,13 @@
         color: grey;
         width: 40%;
     }
+}
+
+.explore_Div1Para{
+    position: relative;
+    top: 60px;
+    left: 60px;
+    opacity: 0;
 }
 
 .explore_Div2{

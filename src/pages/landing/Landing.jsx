@@ -13,6 +13,7 @@ import apple from '../../assets/logo/Apple_Store-Logo.wine.svg';
 import Footer from '../../components/footer/Footer';
 import gsap from 'gsap';
 import SplitType from 'split-type';
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 
 
@@ -21,6 +22,7 @@ import SplitType from 'split-type';
 
 export default function Landing() {
     const isSmallerScreen = useMediaQuery({ query: '(max-width: 500px)' });
+    const isMediumScreen = useMediaQuery({ query: '(max-width: 623px)' });
     // const [selectedOption, setSelectedOption] = useState('');
     const [liElement, setLiElement] = useState('jobs');
     const [showMore, setShowMore] = useState(false);
@@ -55,6 +57,7 @@ export default function Landing() {
 
     useEffect(() => {
         const tl = gsap.timeline({ defaults: { duration: 1 } });
+        gsap.registerPlugin(ScrollTrigger);
 
         const mySplitText1 = new SplitType(".firstDivPara");
 
@@ -66,18 +69,56 @@ export default function Landing() {
             .to(".char", {
                 y: 0,
                 stagger: 0.05,
-                // delay: 0.2,
+                delay: 0.2,
                 duration: .1,
             })
             .to(".secondDiv", {
                 y: 100,
                 opacity: 1,
             })
+            .to(".mainPhoto1", {
+                y: -160,
+                opacity: 1,
+                ease: "easeOut"
+
+            })
             .to(".thirdDiv", {
                 y: -50,
                 opacity: 1,
-                color: 'red'
             })
+            .to(".mainPhoto2", {
+                y: 80,
+                opacity: 1,
+                duration: 1,
+                ease: "Power1.easeIn"
+            }, "-=1.5")
+            .to(".mainPhoto3", {
+                opacity: 1,
+                duration: 1,
+                ease: "Power1.easeInOut"
+            }, "-=.5")
+
+
+        // if (isMediumScreen) {}
+            const tl1 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.explore_Div1Para',
+                    start: "top 90%",
+                    end: "bottom 60%",
+                    scrub: true,
+                }
+            });
+
+            tl1.to('.explore_Div1Para', {
+                opacity: 1,
+                duration: 1,
+                x: -60,
+                y: -60,
+                duration: 1,
+                ease: 'easeIn',
+            })
+        
+
 
     }, [])
 
@@ -595,7 +636,7 @@ export default function Landing() {
                 </div>
 
                 <div className='world'>
-                    <World fill="red" />
+                    <World />
                 </div>
             </div>
 
@@ -604,8 +645,8 @@ export default function Landing() {
                     <span class="material-symbols-outlined auto_awesome">
                         auto_awesome
                     </span>
-                    <h2>Explore our offerings</h2>
-                    <p>
+                    <h2 className='explore_Div1h2'>Explore our offerings</h2>
+                    <p className='explore_Div1Para'>
                         Welcome to the explore page where you can see
                         all our offerings in different sections ranging from
                         house sales, gigs, latest jobs, forums, and much more.
