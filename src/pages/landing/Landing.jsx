@@ -135,6 +135,23 @@ export default function Landing() {
                 ease: 'easeIn',
             })
         
+            const tl3 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.auto_awesome',
+                    start: "top 90%",
+                    end: "bottom 60%",
+                    scrub: true,
+                    markers: true,
+                }
+            });
+
+            tl3.to('.auto_awesome', {
+                opacity: 1,
+                duration: 1,
+                ease: 'easeIn',
+                x: 200,
+                rotation: 360,
+            })
 
 
     }, [])
@@ -659,7 +676,7 @@ export default function Landing() {
 
             <div className='explore_Div'>
                 <div className='explore_Div1'>
-                    <span class="material-symbols-outlined auto_awesome">
+                    <span className="material-symbols-outlined auto_awesome">
                         auto_awesome
                     </span>
                     <h2 className='explore_Div1h2'>Explore our offerings</h2>
