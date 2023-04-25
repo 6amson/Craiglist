@@ -117,6 +117,23 @@ export default function Landing() {
                 duration: 1,
                 ease: 'easeIn',
             })
+
+            const tl2 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.explore_Div1h2',
+                    start: "top 90%",
+                    end: "bottom 60%",
+                    scrub: true,
+                }
+            });
+
+            tl2.to('.explore_Div1h2', {
+                opacity: 1,
+                duration: 1,
+                y: -60,
+                duration: 1,
+                ease: 'easeIn',
+            })
         
 
 
