@@ -282,9 +282,9 @@ export default function Landing() {
         gsap.to(".view1", {
             opacity: 1,
             duration: 1,
-            ease: 'ease',
-             
-           
+            ease: 'easeIn',
+
+
             scrollTrigger: {
                 trigger: '.seventhDiv1Para',
                 start: "top 85%",
@@ -299,19 +299,18 @@ export default function Landing() {
                     y: 10,
                     yoyo: true,
                     repeat: -1,
-                    delay: .5,
 
                 })
             }
 
-           
+
         })
 
         gsap.to(".view2", {
             opacity: 1,
             duration: 1,
-            ease: 'ease',
-             
+            ease: 'power4',
+
             scrollTrigger: {
                 trigger: '.seventhDiv1Para',
                 start: "top 85%",
@@ -333,8 +332,8 @@ export default function Landing() {
         gsap.to(".view3", {
             opacity: 1,
             duration: 1,
-            ease: 'ease',
-             
+            ease: 'easeInOut',
+
             scrollTrigger: {
                 trigger: '.seventhDiv1Para',
                 start: "top 85%",
@@ -357,7 +356,7 @@ export default function Landing() {
             opacity: 1,
             duration: 1,
             ease: 'ease',
-             
+
             scrollTrigger: {
                 trigger: '.seventhDiv1Para',
                 start: "top 85%",
