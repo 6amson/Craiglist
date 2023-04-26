@@ -244,14 +244,14 @@
     }
 }
 
-.explore_Div1Para{
+.explore_Div1Para, .fifthDivPara{
     position: relative;
     top: 60px;
     left: 60px;
     opacity: 0;
 }
 
-.explore_Div1h2{
+.explore_Div1h2, .fifthDivh2{
     position: relative;
     top: 60px;
     opacity: 0;
@@ -529,6 +529,8 @@
     border-radius: 50%;
     color: white;
     margin-bottom: $spacing;
+    position: relative;
+    left: -200px;
 }
 
 .exploreTemplateContainer3{
@@ -726,6 +728,12 @@
     }
 }
 
+.sixthDiv1ah2{
+    position: relative;
+    left: -200px;
+    opacity: 0;
+}
+
 
 .midSec{
     background: url('../../assets/midSection.png');
@@ -741,13 +749,16 @@
     position: relative;
     bottom: 0;
     z-index: 10;
+    top: 100px;
+    left: 70px;
+    opacity: 0;
 
     p{
         font-size: 3rem;
         font-weight: 600;
         color: $mainColor;
         position: relative;
-        top: 50%;
+        top: 40%;
         left: 5rem;
     }
 }
@@ -817,12 +828,25 @@
     justify-self: center;
     margin-bottom: 64px;
     z-index: 10;
+    position: relative;
+    opacity: 0;
+    top: 100px;
 }
 
 
 .seventhDiv3{
     justify-self: center;
 
+}
+
+.seventhDiv1Para{
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+
+.seventhDiv1Span{
+  
 }
 
 

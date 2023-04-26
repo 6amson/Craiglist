@@ -91,7 +91,7 @@ export default function Landing() {
                 opacity: 1,
                 duration: 1,
                 ease: "Power1.easeIn"
-            }, "-=1.5")
+            }, "-=2")
             .to(".mainPhoto3", {
                 opacity: 1,
                 duration: 1,
@@ -99,60 +99,187 @@ export default function Landing() {
             }, "-=.5")
 
 
-        // if (isMediumScreen) {}
-            const tl1 = gsap.timeline({
-                scrollTrigger: {
-                    trigger: '.explore_Div1Para',
-                    start: "top 90%",
-                    end: "bottom 60%",
-                    scrub: true,
-                }
-            });
 
-            tl1.to('.explore_Div1Para', {
-                opacity: 1,
-                duration: 1,
-                x: -60,
-                y: -60,
-                duration: 1,
-                ease: 'easeIn',
-            })
 
-            const tl2 = gsap.timeline({
-                scrollTrigger: {
-                    trigger: '.explore_Div1h2',
-                    start: "top 90%",
-                    end: "bottom 60%",
-                    scrub: true,
-                }
-            });
+        gsap.to('.explore_Div1Para', {
+            opacity: 1,
+            duration: 1,
+            x: -60,
+            y: -60,
+            duration: 1,
+            ease: 'easeIn',
+            scrollTrigger: {
+                trigger: '.explore_Div1Para',
+                start: "top 90%",
+                end: "bottom 60%",
+                scrub: true,
+            }
+        })
 
-            tl2.to('.explore_Div1h2', {
-                opacity: 1,
-                duration: 1,
-                y: -60,
-                duration: 1,
-                ease: 'easeIn',
-            })
-        
-            const tl3 = gsap.timeline({
-                scrollTrigger: {
-                    trigger: '.auto_awesome',
-                    start: "top 90%",
-                    end: "bottom 60%",
-                    scrub: true,
-                    markers: true,
-                }
-            });
 
-            tl3.to('.auto_awesome', {
-                opacity: 1,
-                duration: 1,
-                ease: 'easeIn',
-                x: 200,
-                rotation: 360,
-            })
+        gsap.to('.explore_Div1h2', {
+            opacity: 1,
+            duration: 1,
+            y: -60,
+            duration: 1,
+            ease: 'easeIn',
+            scrollTrigger: {
+                trigger: '.explore_Div1h2',
+                start: "top 90%",
+                end: "bottom 60%",
+                scrub: true,
+            }
+        })
 
+
+        gsap.to('.auto_awesome', {
+            opacity: 1,
+            duration: 1,
+            ease: 'easeIn',
+            x: 200,
+            rotation: 360,
+            scrollTrigger: {
+                trigger: '.auto_awesome',
+                start: "top 90%",
+                end: "bottom 60%",
+                scrub: true,
+            }
+        })
+
+
+        gsap.to('.fifthDivPara', {
+            opacity: 1,
+            duration: 1,
+            x: -60,
+            y: -60,
+            duration: 1,
+            ease: 'easeIn',
+            scrollTrigger: {
+                trigger: '.fifthDivPara',
+                start: "top 90%",
+                end: "bottom 60%",
+                scrub: true,
+            }
+        })
+
+
+
+        gsap.to('.fifthDivh2', {
+            opacity: 1,
+            duration: 1,
+            y: -60,
+            duration: 1,
+            ease: 'easeIn',
+            scrollTrigger: {
+                trigger: '.fifthDivh2',
+                start: "top 100%",
+                end: "bottom 70%",
+                scrub: true,
+            }
+        })
+
+        gsap.to('.sentiment', {
+            opacity: 1,
+            duration: 1,
+            ease: 'easeIn',
+            x: 200,
+            rotation: 360,
+            scrollTrigger: {
+                trigger: '.sentiment',
+                start: "top 90%",
+                end: "bottom 60%",
+                scrub: true,
+            }
+        })
+
+
+
+        gsap.to('.sixthDiv1ah2', {
+            opacity: 1,
+            duration: 1,
+            ease: 'easeOut',
+            x: 200,
+            scrollTrigger: {
+                trigger: '.sixthDiv1ah2',
+                start: "top 85%",
+                end: "bottom 55%",
+                scrub: true,
+            }
+        })
+
+        gsap.to('.midSec', {
+            opacity: 1,
+            duration: 1,
+            ease: 'easeOut',
+            y: -100,
+            x: -70,
+            scrollTrigger: {
+                trigger: '.midSec',
+                start: "top 85%",
+                end: "bottom 65%",
+                scrub: true,
+            }
+        })
+
+        gsap.to('.midSecPara', {
+            opacity: 1,
+            duration: 1,
+            ease: 'easeOut',
+            y: "50%",
+           
+            scrollTrigger: {
+                trigger: '.midSec',
+                start: "top 40%",
+                end: "bottom 65%",
+                scrub: true,
+            }
+        })
+
+        gsap.to('.midSecPara', {
+            opacity: 1,
+            duration: 1,
+            ease: 'easeOut',
+            y: "50%",
+           
+            scrollTrigger: {
+                trigger: '.midSec',
+                start: "top 40%",
+                end: "bottom 65%",
+                scrub: true,
+            }
+        })
+
+        gsap.to('.seventhDiv1Para', {
+            opacity: 1,
+            duration: 1,
+            ease: 'ease',
+            y: -100,
+           
+            scrollTrigger: {
+                trigger: '.seventhDiv1Para',
+                start: "top 80%",
+                end: "bottom 60%",
+                scrub: true,
+            }
+        })
+
+        gsap.to('.seventhDiv2', {
+            opacity: 1,
+            duration: 1,
+            ease: 'ease',
+            y: -100,
+           
+            scrollTrigger: {
+                trigger: '.seventhDiv2',
+                start: "top 80%",
+                end: "bottom 60%",
+                scrub: true,
+                markers: true,
+            }
+        })
+
+
+    
 
     }, [])
 
@@ -757,8 +884,8 @@ export default function Landing() {
                 </div>
 
                 <div>
-                    <h2>Testimonials</h2>
-                    <p>
+                    <h2 className='fifthDivh2'>Testimonials</h2>
+                    <p className='fifthDivPara'>
                         Over the years we have heped 200million+ users to achieve
                         their goal. This is what our users think about us.
                     </p>
@@ -774,7 +901,7 @@ export default function Landing() {
             <div className='sixthDiv'>
                 <div className='sixthDiv1'>
                     <div className='sixthDiv1a'>
-                        <h2>
+                        <h2 className='sixthDiv1ah2'>
                             Perform more functions with craiglist app.
                         </h2>
                     </div>
@@ -799,7 +926,7 @@ export default function Landing() {
                 </div>
 
                 <div className='midSec'>
-                    <p>Craiglist</p>
+                    <p className='midSecPara'>Craiglist</p>
                 </div>
 
                 <div className='circle circle1'></div>
@@ -810,13 +937,13 @@ export default function Landing() {
 
             <div className='seventhDiv'>
                 <div className='seventhDiv1'>
-                    <p>Start your journey with craiglist</p>
+                    <p className='seventhDiv1Para'>Start your journey with craiglist</p>
                 </div>
 
                 <div className='seventhDiv2'>
-                    <span>
+                    <span className='seventhDiv1Span'>
                         We leave you with a smile everytime you visit our platfrom.
-                        Be part of the craiglist family. We are alwsys at your service.
+                        Be part of the craiglist family. We are always at your service.
                     </span>
                 </div>
 
