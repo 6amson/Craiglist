@@ -295,8 +295,8 @@ export default function Landing() {
 
             onComplete: function () {
                 gsap.to(".view1", {
-                    x: 10,
-                    y: 20,
+                    x: 15,
+                    y: 10,
                     yoyo: true,
                     repeat: -1,
                     delay: .5,
@@ -323,7 +323,7 @@ export default function Landing() {
             onComplete: function () {
                 gsap.to(".view2", {
                     y: 15,
-                    x: 20,
+                    x: 10,
                     yoyo: true,
                     repeat: -1,
                 })
@@ -368,7 +368,7 @@ export default function Landing() {
 
             onComplete: function () {
                 gsap.to(".view4", {
-                    x: 20,
+                    x: 10,
                     yoyo: true,
                     repeat: -1,
                 })
