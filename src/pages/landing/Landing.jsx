@@ -60,6 +60,7 @@ export default function Landing() {
         gsap.registerPlugin(ScrollTrigger);
 
         const mySplitText1 = new SplitType(".firstDivPara");
+        
 
         if (li_jobs.current || available.current) {
             li_jobs.current.classList.add('highlight');
@@ -226,7 +227,7 @@ export default function Landing() {
             duration: 1,
             ease: 'easeOut',
             y: "50%",
-           
+
             scrollTrigger: {
                 trigger: '.midSec',
                 start: "top 40%",
@@ -240,7 +241,7 @@ export default function Landing() {
             duration: 1,
             ease: 'easeOut',
             y: "50%",
-           
+
             scrollTrigger: {
                 trigger: '.midSec',
                 start: "top 40%",
@@ -254,7 +255,7 @@ export default function Landing() {
             duration: 1,
             ease: 'ease',
             y: -100,
-           
+
             scrollTrigger: {
                 trigger: '.seventhDiv1Para',
                 start: "top 80%",
@@ -268,7 +269,7 @@ export default function Landing() {
             duration: 1,
             ease: 'ease',
             y: -100,
-           
+
             scrollTrigger: {
                 trigger: '.seventhDiv2',
                 start: "top 80%",
@@ -278,7 +279,40 @@ export default function Landing() {
         })
 
 
-    
+        if (!isMediumScreen && !isSmallerScreen) {
+            const listItems = ulRef.current.children;
+
+            gsap.to(listItems, {
+                opacity: 1,
+                duration: 1,
+                ease: 'ease',
+                y: -20,
+
+                scrollTrigger: {
+                    trigger: ulRef.current,
+                    start: "top 80%",
+                    end: "100px 60%",
+                    scrub: true,
+                }
+            })
+        }else if(isSmallerScreen){
+            gsap.to(".select", {
+                opacity: 1,
+                duration: 1,
+                ease: 'ease',
+                y: -30,
+               
+                scrollTrigger: {
+                    trigger: 'select',
+                    start: "top 80%",
+                    end: "100px 60%",
+                    scrub: true,
+                }
+            })
+        }
+
+
+
 
     }, [])
 
@@ -817,7 +851,7 @@ export default function Landing() {
                     {
                         isSmallerScreen ?
                             <div>
-                                <select value={liElement} onChange={handleOptionChange}>
+                                <select className='select' value={liElement} onChange={handleOptionChange}>
                                     <option value="jobs">Jobs</option>
                                     <option value="houses">Houses</option>
                                     <option value="services">Services</option>
