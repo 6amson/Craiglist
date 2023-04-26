@@ -274,7 +274,6 @@ export default function Landing() {
                 start: "top 80%",
                 end: "bottom 60%",
                 scrub: true,
-                markers: true,
             }
         })
 
