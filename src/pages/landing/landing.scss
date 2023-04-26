@@ -360,6 +360,7 @@
     border: solid 2px rgb(217, 225, 235);
     border-radius: 3px;
     padding: 1rem;
+    position: relative;
     h3{
         font-weight: 500;
         margin-bottom: 4px;
@@ -851,10 +852,6 @@
     opacity: 0;
 }
 
-.seventhDiv1Span{
-  
-}
-
 
 .view{
     position: absolute;
@@ -877,6 +874,7 @@
     background-repeat: no-repeat;
     top: 2rem;
     left: 7rem;
+    opacity: 0;
 }
 
 .view2{
@@ -885,6 +883,7 @@
     background-repeat: no-repeat;
     right: 9rem;
     top: 3rem;
+    opacity: 0;
 }
 
 .view3{
@@ -894,6 +893,7 @@
     background-position-y: 50%;
     right: 5rem;
     top: 13rem;
+    opacity: 0;
 }
 
 .view4{
@@ -903,6 +903,7 @@
     background-position-y: 40%;
     top: 13rem;
     left: 3rem;
+    opacity: 0;
 }
 
 

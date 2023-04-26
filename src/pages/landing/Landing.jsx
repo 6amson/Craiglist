@@ -38,6 +38,7 @@ export default function Landing() {
     const li_jobs = useRef(null);
     const ulRef = useRef(null);
     const available = useRef(null);
+    const exploreTem = useRef(null);
 
 
 
@@ -60,7 +61,7 @@ export default function Landing() {
         gsap.registerPlugin(ScrollTrigger);
 
         const mySplitText1 = new SplitType(".firstDivPara");
-        
+
 
         if (li_jobs.current || available.current) {
             li_jobs.current.classList.add('highlight');
@@ -278,6 +279,103 @@ export default function Landing() {
             }
         })
 
+        gsap.to(".view1", {
+            opacity: 1,
+            duration: 1,
+            ease: 'ease',
+             
+           
+            scrollTrigger: {
+                trigger: '.seventhDiv1Para',
+                start: "top 85%",
+                end: "bottom 55%",
+                scrub: true,
+            },
+
+
+            onComplete: function () {
+                gsap.to(".view1", {
+                    x: 10,
+                    y: 20,
+                    yoyo: true,
+                    repeat: -1,
+                    delay: .5,
+
+                })
+            }
+
+           
+        })
+
+        gsap.to(".view2", {
+            opacity: 1,
+            duration: 1,
+            ease: 'ease',
+             
+            scrollTrigger: {
+                trigger: '.seventhDiv1Para',
+                start: "top 85%",
+                end: "bottom 55%",
+                scrub: true,
+            },
+
+
+            onComplete: function () {
+                gsap.to(".view2", {
+                    y: 15,
+                    x: 20,
+                    yoyo: true,
+                    repeat: -1,
+                })
+            }
+        })
+
+        gsap.to(".view3", {
+            opacity: 1,
+            duration: 1,
+            ease: 'ease',
+             
+            scrollTrigger: {
+                trigger: '.seventhDiv1Para',
+                start: "top 85%",
+                end: "bottom 55%",
+                scrub: true,
+            },
+
+
+            onComplete: function () {
+                gsap.to(".view3", {
+                    y: 15,
+                    yoyo: true,
+                    repeat: -1,
+                })
+            }
+        })
+
+
+        gsap.to(".view4", {
+            opacity: 1,
+            duration: 1,
+            ease: 'ease',
+             
+            scrollTrigger: {
+                trigger: '.seventhDiv1Para',
+                start: "top 85%",
+                end: "bottom 55%",
+                scrub: true,
+            },
+
+
+            onComplete: function () {
+                gsap.to(".view4", {
+                    x: 20,
+                    yoyo: true,
+                    repeat: -1,
+                })
+            }
+        })
+
+
 
         if (!isMediumScreen && !isSmallerScreen) {
             const listItems = ulRef.current.children;
@@ -295,13 +393,16 @@ export default function Landing() {
                     scrub: true,
                 }
             })
-        }else if(isSmallerScreen){
+
+
+
+        } else if (isSmallerScreen) {
             gsap.to(".select", {
                 opacity: 1,
                 duration: 1,
                 ease: 'ease',
                 y: -30,
-               
+
                 scrollTrigger: {
                     trigger: 'select',
                     start: "top 80%",
@@ -369,7 +470,7 @@ export default function Landing() {
                     <div className='exploreTemplateContainer'>
                         {
                             newArray.map((job) => (
-                                <div className='exploreTem' key={job.id}>
+                                <div ref={exploreTem} className='exploreTem' key={job.id}>
                                     <div className='exploreTem1'>
                                         <div className='exploreTem1a'>
                                             <img src={job.photo} />
